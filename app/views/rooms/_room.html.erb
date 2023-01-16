@@ -1,0 +1,10 @@
+<div id="<%= dom_id room %>">
+  <p>
+    <strong>Name:</strong>
+    <%= room.name %>
+  </p>
+  <%= content_tag(:div, "", data: {
+    controller: "room",
+    room_id: room.id,
+}) %>
+</div>
